@@ -1,0 +1,107 @@
+/***********************************************************************
+ * Copyright (c) 2017 Charles W. Roberts
+ * All Rights Reserved
+ *
+ * No portion of this code may be copied or modified without the
+ * prior written permission of Charles Roberts.
+ *
+ ***********************************************************************/
+
+body{
+	background-color: powderblue;
+}
+
+.pctran-banner{
+  background-color: powderblue;
+  margin-bottom: 30px;
+  padding-bottom: 0;
+}
+
+.pctran-button{
+  background-color: #d0d0d0;
+}
+#upperCase{
+  background-color: #d0d0d0;
+margin-left: 5%;
+}
+
+#input_area{ 
+  background-color: #eaeaea;
+  height: 10em;
+  max-height: 10em;
+  max-width:100%; 
+  min-height: 1em;
+  min-width:100%; 
+  padding:0.5em;
+  width: 100%; 
+}
+
+#out_text_header{
+  padding-bottom: 0.4em;
+}
+
+#output_text p{
+  max-width: 100%;
+  word-break: break-all;
+}
+
+
+#output_text{
+  background-color: #eaeaea;
+  width: 100%; 
+  min-width:100%; 
+  max-width:100%; 
+  word-break: break-all;
+  height: 10em;
+  min-height: 1em;
+  max-height: 10em;
+  border-style: dotted;
+  border-width:1px;
+  margin-top: 0.5em;
+}
+
+.specialChar{
+   font-weight: bold;
+   height: 2em;
+   margin: 0;
+   padding: 0;
+   min-width: 2em;
+   background-color: #d0d0d0;
+}
+
+.btn-block{
+  background-color: #d0d0d0;
+}
+
+a:link {
+    color: black;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black;
+    text-decoration: underline; 
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+.Copyright {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: small;
+}
+
+
+@media screen and ( max-height: 768px )
+{
+  .Copyright{
+    position: relative;
+  
+}
+}

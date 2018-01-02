@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!-- 
+ * Copyright (c) 2017 Charles W. Roberts
+ * All Rights Reserved
+ *
+ * No portion of this code may be copied or modified without the
+ * prior written permission of Charles Roberts.
+ *
+ -->
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+   <!-- jQuery library -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <!-- Popper JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+   <!-- Latest compiled JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+   <!-- Local style sheet -->
+   <link rel="stylesheet" href="assets/css/style.css">
+   <title>PC-Tran, A URL Encoder</title>
+</head>
+
+<body>
+
+   <div class="jumbotron pctran-banner jumbotron-fluid">
+      <div class="container">
+         <h1 class="text-center">PC-Tran, A URL Encoder</h1>
+         <p>URLs containing certain characters will display and link incorrectly unless those characters are percent-encoded.  This page is a percent code translator.  Enter a string to be encoded in the left text box, select which of the reserved characters should be translated, and click the "Translate" button at the bottom of the page.</p>
+         <p>More information on percent encoding can be found at <a href="https://en.wikipedia.org/wiki/Percent-encoding" target = "blank">Wikipedia's Percent-encoding Webpage</a>.</p>
+      </div>
+   </div><!-- End of <div class="jumbotron jumbotron-fluid"> -->
+
+
+   <div class="container">
+
+      <!-- === The first row on the page is for selecting special chars === -->
+
+      <div class="row">
+      	<div class="col-sm-12">
+      		<div id="button_collection">
+      			<h3>Select Characters to Translate</h3>
+      			<div id="button_area">
+                  <!-- Javascript will put buttons in the button_area -->
+      		   </div>
+      		   <br>
+      			<button id="select_all" class="pctran-button">
+                  Select All
+               </button>
+      			<button id="clear_all" class="pctran-button">
+                  Clear All
+               </button>
+      			<button id="upperCase" class="pctran-button">
+      				UPPER CASE DIGITS
+      			</button>
+      		
+      		</div><!-- End of <div id="button_collection"> -->
+      	</div><!-- End of <div class="col-sm-12"> -->
+      </div><!-- End of <div class="row"> -->
+
+      <br>
+
+      <!-- ================ The second row is for text areas ====+========= -->
+
+      <div class="row">
+
+         <!-- ===== The "to be translated" column ===== -->
+         <div class="col-md-6 col-sm-12">
+            <div class="form-group">
+               <label for="The String to be Translated">
+                  <h5>The String to be Translated:</h5>
+               </label>
+               <textarea class="form-control" rows="5" id="input_area"></textarea>
+               <br>
+               <button id="clear_text" class="pctran-button">
+                  Clear String
+               </button>
+            </div><!-- End of <div class="form-group">  -->
+         </div><!-- End of <div class="col-md-6 col-sm-12">  -->
+
+         <!-- ===== The "has been translated" column ===== -->
+         <div class="col-md-6 col-sm-12">
+            <h5 id="out_text_header">The Translated URL String:</h5>
+            <div id="output_text">
+            <!-- Java script will over wright the following paragraph -->
+            <p id="output_paragraph"></p>  		
+            </div><!-- End of <div id="output_text">  -->    
+         </div><!-- End of <div class="col-md-6 col-sm-12">  -->    
+      </div><!-- End of the second row (<div class="row">)  -->
+
+      <!-- ========= The third row is for a big translate button ========== -->
+
+      <div class="row">
+         <div class="col-sm-12 ">
+            <button type="button" id="translateButton" class ="btn-block">Translate</button>
+         </div>
+      </div><!-- End of the third row (<div class="row">)  -->
+<br>
+      <div class="row">
+         <div class="col-sm-12 ">
+		<p class = "Copyright"><i> &copy 2018 Charles.Roberts@gatech.edu</i> </p>
+         </div>
+     </div>
+
+   </div><!-- End of <div class="container"> -->
+
+      
+
+   <!-- Linking Javascript -->
+   <script type="text/javascript" src="assets/javascript/CharCollection.js">
+   </script>
+
+   <script type="text/javascript" src="assets/javascript/SpecialCharacter.js">
+   </script>
+
+   <script type="text/javascript" src="assets/javascript/logic.js">
+   </script>
+
+</body>
+
+</html>
